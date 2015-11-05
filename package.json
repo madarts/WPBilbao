@@ -1,0 +1,31 @@
+{
+  "name": "wpbilbao",
+  "version": "1.0.0",
+  "description": "A Genesis Framework Child Theme by Kreatidos for WPBilbao",
+  "main": "gulpfile.js",
+  "author": "Ibon Azkoitia",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.3.0",
+    "gulp-combine-media-queries": "^0.2.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-filter": "^3.0.1",
+    "gulp-ignore": "^2.0.1",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-load-plugins": "^1.0.0",
+    "gulp-newer": "^0.5.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-run-sequence": "^0.3.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-scss-lint": "^0.3.6",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.2",
+    "gulp-uglifycss": "^1.0.4",
+    "gulp-zip": "^3.0.2"
+  }
+}

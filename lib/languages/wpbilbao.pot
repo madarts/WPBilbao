@@ -1,0 +1,178 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Bilbao\n"
+"POT-Creation-Date: 2015-11-02 04:15+0100\n"
+"PO-Revision-Date: 2015-11-02 04:15+0100\n"
+"Last-Translator: Ibon Azkoitia <ibon@kreatidos.com>\n"
+"Language-Team: Kreatidos <info@kreatidos.com>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-Basepath: ../../.\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x;wpbilbao\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: author.php:117 author.php:124
+msgid "Ver datos de contacto"
+msgstr "Ver datos de contacto"
+
+#: author.php:134
+msgid "Hazte miembro"
+msgstr "Hazte miembro"
+
+#: author.php:137
+msgid ""
+"Para poder ver los datos de contacto de los miembros tienes que ser miembro."
+msgstr ""
+"Para poder ver los datos de contacto de los miembros tienes que ser miembro."
+
+#: author.php:138
+msgid ""
+"Ser miembro es <strong>totalmente gratuito</strong> y podrás contar con tu "
+"propio perfil."
+msgstr ""
+"Ser miembro es <strong>totalmente gratuito</strong> y podrás contar con tu "
+"propio perfil."
+
+#: author.php:139
+msgid "Iremos añadiendo nuevas características para los miembros."
+msgstr "Iremos añadiendo nuevas características para los miembros."
+
+#: author.php:140
+msgid "¡Crea tu perfil ahora en menos de 5 minutos!"
+msgstr "¡Crea tu perfil ahora en menos de 5 minutos!"
+
+#: author.php:143
+msgid "Cerrar"
+msgstr "Cerrar"
+
+#: author.php:144
+msgid "Entrar"
+msgstr "Entrar"
+
+#: author.php:145
+msgid "Hacerse miembro"
+msgstr "Hacerse miembro"
+
+#: author.php:162
+msgid "Enviar correo electrónico"
+msgstr "Enviar correo electrónico"
+
+#: author.php:170
+msgid "Llamar por teléfono"
+msgstr "Llamar por teléfono"
+
+#: author.php:183
+msgid "Visitar página web"
+msgstr "Visitar página web"
+
+#: author.php:188
+msgid "Visitar Twitter"
+msgstr "Visitar Twitter"
+
+#: author.php:194
+msgid "Visitar Linkedin"
+msgstr "Visitar Linkedin"
+
+#: author.php:199
+msgid "Visitar Facebook"
+msgstr "Visitar Facebook"
+
+#: author.php:204
+msgid "Visitar Google"
+msgstr "Visitar Google"
+
+#: author.php:212
+msgid "Aún no hay contenido de este miembro"
+msgstr "Aún no hay contenido de este miembro"
+
+#: lib/sections/section-autor.php:58
+msgid "Escrito por"
+msgstr "Escrito por"
+
+#: lib/sections/section-autor.php:67 lib/sections/section-autor.php:88
+#: lib/sections/section-autor.php:107
+msgid "Ver el perfil de "
+msgstr "Ver el perfil de "
+
+#: lib/sections/section-autor.php:67 lib/sections/section-autor.php:88
+#: lib/sections/section-autor.php:107
+msgid "Ver perfil"
+msgstr "Ver perfil"
+
+#: lib/sections/section-autor.php:79
+msgid "Traducido por"
+msgstr "Traducido por"
+
+#: lib/sections/section-autor.php:98
+msgid "Escrito y Traducido por"
+msgstr "Escrito y Traducido por"
+
+#: page-templates/template-cuentas.php:48
+#: page-templates/template-cuentas.php:50
+#: page-templates/template-cuentas.php:133
+#: page-templates/template-cuentas.php:223
+msgid "TOTAL"
+msgstr "TOTAL"
+
+#: page-templates/template-cuentas.php:58
+msgid "Gastos"
+msgstr "Gastos"
+
+#: page-templates/template-cuentas.php:64
+#: page-templates/template-cuentas.php:152
+msgid "Fecha"
+msgstr "Fecha"
+
+#: page-templates/template-cuentas.php:65
+#: page-templates/template-cuentas.php:153
+msgid "Descripción"
+msgstr "Descripción"
+
+#: page-templates/template-cuentas.php:66
+#: page-templates/template-cuentas.php:154
+msgid "Cantidad"
+msgstr "Cantidad"
+
+#: page-templates/template-cuentas.php:146
+msgid "Ingresos"
+msgstr "Ingresos"
+
+#: single/single-cat-resumenes.php:31
+msgid "Presentación"
+msgstr "Presentación"
+
+#: single/single-cat-resumenes.php:46
+msgid "Vídeo"
+msgstr "Vídeo"
+
+#: single/single-cat-resumenes.php:55
+msgid "Menciones en Twitter"
+msgstr "Menciones en Twitter"
+
+#: single/single-cat-resumenes.php:56
+msgid ""
+"Para completar el resumen de esta presentación os dejamos algunas menciones "
+"recogidas de nuestro timeline de Twitter."
+msgstr ""
+"Para completar el resumen de esta presentación os dejamos algunas menciones "
+"recogidas de nuestro timeline de Twitter."
+
+#: single/single-cat-resumenes.php:66
+msgid "Enlace Meetup"
+msgstr "Enlace Meetup"
+
+#: single/single-cat-resumenes.php:67
+#, php-format
+msgid ""
+"Si quieres saber qué han comentado los asistentes a este encuentro y dejar "
+"tu propia valoración no dejes de pasarte por <a href=\"%s\" title=\"Enlace "
+"Meetup\" target=\"_blank\">la página del evento en Meetup</a>."
+msgstr ""
+"Si quieres saber qué han comentado los asistentes a este encuentro y dejar "
+"tu propia valoración no dejes de pasarte por <a href=\"%s\" title=\"Enlace "
+"Meetup\" target=\"_blank\">la página del evento en Meetup</a>."

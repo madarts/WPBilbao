@@ -1,0 +1,177 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Bilbao\n"
+"POT-Creation-Date: 2015-11-02 04:15+0100\n"
+"PO-Revision-Date: 2015-11-02 04:32+0100\n"
+"Last-Translator: Ibon Azkoitia <ibon@kreatidos.com>\n"
+"Language-Team: Kreatidos <info@kreatidos.com>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-Basepath: ../../.\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x;wpbilbao\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: author.php:117 author.php:124
+msgid "Ver datos de contacto"
+msgstr "Kontaktu datuak ikusi"
+
+#: author.php:134
+msgid "Hazte miembro"
+msgstr "Bazkide egin"
+
+#: author.php:137
+msgid ""
+"Para poder ver los datos de contacto de los miembros tienes que ser miembro."
+msgstr "Bazkideen kontaktu datuak ikusi ahal izateko bazkide izan behar zara."
+
+#: author.php:138
+msgid ""
+"Ser miembro es <strong>totalmente gratuito</strong> y podrás contar con tu "
+"propio perfil."
+msgstr ""
+"Bazkide izatea <strong>erabat doan</strong> da eta zure profila eduki ahal "
+"dezakezu."
+
+#: author.php:139
+msgid "Iremos añadiendo nuevas características para los miembros."
+msgstr "Ezaugarri berriak gehituko ditugu bazkideentzat."
+
+#: author.php:140
+msgid "¡Crea tu perfil ahora en menos de 5 minutos!"
+msgstr "Sortu zure profila orain 5 minutu baino gutxiagotan!"
+
+#: author.php:143
+msgid "Cerrar"
+msgstr "Itxi"
+
+#: author.php:144
+msgid "Entrar"
+msgstr "Sartu"
+
+#: author.php:145
+msgid "Hacerse miembro"
+msgstr "Bazkide egin"
+
+#: author.php:162
+msgid "Enviar correo electrónico"
+msgstr "Mezu elektronikoa bidali"
+
+#: author.php:170
+msgid "Llamar por teléfono"
+msgstr "Telefonoz deitu"
+
+#: author.php:183
+msgid "Visitar página web"
+msgstr "Web horrialdea bizitatu"
+
+#: author.php:188
+msgid "Visitar Twitter"
+msgstr "Twitter bizitatu"
+
+#: author.php:194
+msgid "Visitar Linkedin"
+msgstr "Linkedin bizitatu"
+
+#: author.php:199
+msgid "Visitar Facebook"
+msgstr "Facebook bizitatu"
+
+#: author.php:204
+msgid "Visitar Google"
+msgstr "Google bizitatu"
+
+#: author.php:212
+msgid "Aún no hay contenido de este miembro"
+msgstr "Bazkide onen informazioa ez dako eskuragarri oraindik"
+
+#: lib/sections/section-autor.php:58
+msgid "Escrito por"
+msgstr "Idazlea"
+
+#: lib/sections/section-autor.php:67 lib/sections/section-autor.php:88
+#: lib/sections/section-autor.php:107
+msgid "Ver el perfil de "
+msgstr "Profila ikusi"
+
+#: lib/sections/section-autor.php:67 lib/sections/section-autor.php:88
+#: lib/sections/section-autor.php:107
+msgid "Ver perfil"
+msgstr "Profila ikusi"
+
+#: lib/sections/section-autor.php:79
+msgid "Traducido por"
+msgstr "Itzultzailea"
+
+#: lib/sections/section-autor.php:98
+msgid "Escrito y Traducido por"
+msgstr "Idazle eta Itzultzailea"
+
+#: page-templates/template-cuentas.php:48
+#: page-templates/template-cuentas.php:50
+#: page-templates/template-cuentas.php:133
+#: page-templates/template-cuentas.php:223
+msgid "TOTAL"
+msgstr "GUZTIRA"
+
+#: page-templates/template-cuentas.php:58
+msgid "Gastos"
+msgstr "Gastuak"
+
+#: page-templates/template-cuentas.php:64
+#: page-templates/template-cuentas.php:152
+msgid "Fecha"
+msgstr "Data"
+
+#: page-templates/template-cuentas.php:65
+#: page-templates/template-cuentas.php:153
+msgid "Descripción"
+msgstr "Deskripzioa"
+
+#: page-templates/template-cuentas.php:66
+#: page-templates/template-cuentas.php:154
+msgid "Cantidad"
+msgstr "Kantitatea"
+
+#: page-templates/template-cuentas.php:146
+msgid "Ingresos"
+msgstr "Sarrerak"
+
+#: single/single-cat-resumenes.php:31
+msgid "Presentación"
+msgstr "Aurkezpena"
+
+#: single/single-cat-resumenes.php:46
+msgid "Vídeo"
+msgstr "Bideoa"
+
+#: single/single-cat-resumenes.php:55
+msgid "Menciones en Twitter"
+msgstr "Aipamenak Twitteren"
+
+#: single/single-cat-resumenes.php:56
+msgid ""
+"Para completar el resumen de esta presentación os dejamos algunas menciones "
+"recogidas de nuestro timeline de Twitter."
+msgstr ""
+"Aurkezpen honen laburbena osatzeko Twitterreko Aipamen batzuk konpartitzen "
+"dizkizuegu."
+
+#: single/single-cat-resumenes.php:66
+msgid "Enlace Meetup"
+msgstr "Meetup esteka"
+
+#: single/single-cat-resumenes.php:67
+#, php-format
+msgid ""
+"Si quieres saber qué han comentado los asistentes a este encuentro y dejar "
+"tu propia valoración no dejes de pasarte por <a href=\"%s\" title=\"Enlace "
+"Meetup\" target=\"_blank\">la página del evento en Meetup</a>."
+msgstr ""
+"Topaketa honetara etorritako bazkideen ikuspegia jakin nahi baduzu, <a href="
+"\"%s\" title=\"Meetup Esteka\" target=\"_blank\">Meetuparen web orrialdetik</"
+"a> pasatu zaitez."

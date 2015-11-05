@@ -1,0 +1,33 @@
+// SITIO
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  @include font-size(18);
+  background-color: $background;
+  color: $textcolor;
+  font-family: $basefont;
+  font-weight: 300;
+  line-height: $baselineheight;
+  margin: 0;
+}
+
+.entry-title {
+  font-weight: 400;
+}
+
+.btn-primario {
+  background-color: $basecolor;
+  border-color: $basecolor-dark;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background-color: $basecolor-dark;
+    color: $white !important;
+  }
+}
+
+// END of SITIO

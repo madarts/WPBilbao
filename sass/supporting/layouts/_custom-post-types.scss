@@ -1,0 +1,79 @@
+// CUSTOM POST TYPES
+
+.miembro-meta {
+  text-align: center;
+
+  .miembro-meta-gravatar {
+    display: inline-block;
+  }
+}
+
+// VÍDEOS
+
+.embed-container {
+  height: auto;
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.post-type-archive-videos {
+
+  .entry {
+    min-height: 295px;
+    padding: 20px;
+  }
+
+  .embed-container {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+// VÍDEOS Single
+.single-videos {
+
+  .content {
+    .btn:last-of-type {
+      margin-left: 20px;
+    }
+  }
+
+  .embed-container {
+    margin-bottom: 40px;
+  }
+}
+
+// VÍDEOS Sidebar
+
+#featured-custom-post-type-2 {
+
+  .entry {
+    margin-bottom: 10px;
+  }
+
+  .entry-title {
+    @include font-size(18);
+    border-left: 0;
+
+    a {
+      color: $basecolor;
+    }
+  }
+}
+
+// END of CUSTOM POST TYPES

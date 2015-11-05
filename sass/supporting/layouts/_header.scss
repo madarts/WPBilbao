@@ -1,0 +1,54 @@
+// HEADER
+
+.site-header {
+
+  .site-title {
+    margin-top: 0;
+
+    a {
+      background: url('http://www.wpbilbao.es/wp-content/uploads/2015/05/cropped-wordpress-bilbao1.jpg') no-repeat;
+    }
+  }
+
+  .header-widget-area {
+    padding-top: 30px;
+  }
+
+  .widget {
+    @include box-shadow($shadow: 0 2px rgba(0, 0, 0, .05));
+    float: right;
+    max-width: 600px;
+    text-align: left;
+
+  }
+
+  .widget-title {
+    @include box-shadow($shadow: inset 5px 0 rgba(0, 0, 0, .15));
+    @include font-size(24);
+    background: $basecolor;
+    color: $white;
+    margin-bottom: 0;
+    padding: 6px 10px;
+
+    &::before {
+      content: '\f145';
+      display: inline-block;
+      font: normal 30px/1 'dashicons';
+      margin-right: 10px;
+      vertical-align: text-top;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+
+  .textwidget {
+    @include box-shadow($shadow: inset 5px 0 rgba(0, 0, 0, .15));
+    background: $white;
+    padding: 5px 12px;
+
+    .enlace {
+      margin-left: 10px;
+    }
+  }
+}
+
+// END of HEADER

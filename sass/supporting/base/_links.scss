@@ -1,0 +1,25 @@
+// $LINKS
+
+a {
+  color: $linkcolor;
+  text-decoration: none;
+
+  &:visited {
+    color: $linkcolorvisited;
+  }
+
+  &:hover {
+    color: $linkcolorhover;
+    text-decoration: none;
+  }
+
+  &:focus {
+    color: $linkcolorfocus;
+    outline: none;
+  }
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}

@@ -1,0 +1,71 @@
+/*!
+	Theme Name: WordPress Bilbao
+	Theme URI: http://www.kreatidos.com
+	Description: Tema Hijo de Genesis retocado para la página web de WordPress Bilbao
+	Author: Kreatidos
+	Author URI: http://www.kreatidos.com/
+
+	Version: 1.0.0
+	Text Domain: wpbilbao
+
+	Tags: genesis
+
+	Template: genesis
+	Template Version: 2.0
+
+	License: GPL-2.0+
+	License URI: http://www.opensource.org/licenses/gpl-license.php
+*/
+
+
+// Variables, Mixins, Etc
+// DO NOT EDIT ORDER OF FILES
+
+
+@import "supporting/vendor/genesis";
+
+@import "supporting/vendor/bootstrap";
+
+// @import "supporting/vendor/foundation";
+
+@import "supporting/vendor/fonts/dashicons";
+
+@import "supporting/vendor/fonts/fontawesome";
+
+
+
+// BASE
+
+@import "supporting/base/mixins";
+
+@import "supporting/base/variables";
+
+@import "supporting/base/tipography";
+
+// @import "supporting/base/links";
+
+
+
+// LAYOUTS
+
+@import "supporting/layouts/site";
+
+@import "supporting/layouts/header";
+
+@import "supporting/layouts/navigation";
+
+// @import "supporting/layouts/frontpage";
+
+@import "supporting/layouts/pages";
+
+@import "supporting/layouts/blog";
+
+@import "supporting/layouts/single";
+
+// @import "supporting/layouts/sections";
+
+// @import "supporting/layouts/footer";
+
+@import "supporting/layouts/tables";
+
+@import "supporting/layouts/custom-post-types";

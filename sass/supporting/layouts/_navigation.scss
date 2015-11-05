@@ -1,0 +1,33 @@
+// NAVIGATION
+
+// Nav-Primary
+
+.genesis-nav-menu {
+  font-size: 18px;
+  margin-bottom: 0;
+
+  .menu-item {
+    float: left;
+  }
+
+  .menu-item:last-of-type {
+    float: right;
+  }
+
+  a {
+    color: $darkergrey;
+    display: block;
+    padding: 22px 24px;
+  }
+
+  .current-menu-item {
+    a {
+      background-color: $basecolor;
+      color: $white;
+    }
+  }
+}
+
+// Nav-Secondary
+
+// END of NAVIGATION

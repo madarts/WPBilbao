@@ -1,0 +1,19 @@
+# ignore all files starting with .
+\.*
+# include .gitignore (i.e. do NOT ignore)
+!.gitignore
+# ignore all files that start with ~
+~*
+
+# compressed version of javascript (created with gulp / uglify)
+js/wpbilbao.min.js
+js/vendor.min.js
+
+# ignore node/gulp dependencies
+# these are easily recreated on a new project
+# with `npm install`
+node_modules/
+
+### Sass ###
+.sass-cache/
+*.css.map

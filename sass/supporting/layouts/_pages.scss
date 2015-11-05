@@ -1,0 +1,95 @@
+// PAGES
+
+// Aportaciones
+
+.page-template-template-cuentas {
+
+  form {
+    text-align: center;
+
+    input {
+      border: 0;
+    }
+  }
+
+  .fa {
+    color: $lightgrey;
+    font-size: 16px;
+    margin-right: 8px;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+
+  .gastos {
+
+    .precio {
+      color: $danger;
+      text-align: right;
+    }
+  }
+
+  .ingresos {
+
+    .precio {
+      color: $success;
+      text-align: right;
+    }
+  }
+}
+
+// Author.php
+
+.author {
+
+  .perfil {
+    text-align: center;
+
+    img {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .modal {
+      text-align: left;
+    }
+  }
+
+  .descripcion {
+    li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    i {
+      margin-right: 10px;
+    }
+  }
+
+  .redes-sociales {
+
+    li {
+      margin: 20px 0 40px;
+      text-align: center;
+    }
+
+    a {
+      color: $textcolor;
+
+      &:hover {
+        color: $basecolor;
+      }
+    }
+
+    i {
+      @include font-size(40);
+    }
+  }
+}
+
+// END of PAGES
