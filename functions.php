@@ -16,6 +16,7 @@ include_once(get_stylesheet_directory() . '/lib/theme_setup.php');
 /*==========  Functions  ===========*/
 @include 'lib/functions/single-resumenes.php';
 @include 'lib/functions/user-profile.php';
+@include 'lib/functions/custom-footer.php';
 
 /*===========  Sections  ===========*/
 @include 'lib/sections/section-autor.php';

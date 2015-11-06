@@ -20,6 +20,12 @@ function wpbilbao_page_author() {
   // Add our Custom Loop
   add_action('genesis_loop', 'wpbilbao_page_author_do_loop');
 
+  // Remove the entry meta in the entry footer (requires HTML5 theme support)
+  remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
+
+  // Add Related Members
+  add_action('genesis_entry_footer', 'wpbilbao_page_author_related_members');
+
   // Force full width content
   add_filter('genesis_pre_get_option_site_layout', '__genesis_return_full_width_content');
 
@@ -76,11 +82,11 @@ function wpbilbao_page_author_do_loop() {
 
           <?php if ($miembro_imagen) : ?>
             <img src="<?php echo cimy_uef_sanitize_content($miembro_imagen); ?>"
-                 alt="<?php echo cimy_uef_sanitize_content($miembro_nombre); ?>"/>
+                 alt="<?php echo esc_html(cimy_uef_sanitize_content($miembro_nombre)); ?>"/>
           <?php endif; ?>
 
           <?php if ($miembro_nombre) : ?>
-            <h1><?php echo cimy_uef_sanitize_content($miembro_nombre); ?></h1>
+            <h1><?php echo esc_html(cimy_uef_sanitize_content($miembro_nombre)); ?></h1>
           <?php endif; ?>
 
           <?php
@@ -148,9 +154,9 @@ function wpbilbao_page_author_do_loop() {
             <ul>
               <?php if ($miembro_email) : ?>
                 <li class="text-right"><i class="fa fa-envelope"></i>
-                  <a href="mailto:<?php echo $miembro_email; ?>"
+                  <a href="mailto:<?php echo esc_html($miembro_email); ?>"
                      title="<?php _e('Enviar correo electrónico', 'wpbilbao'); ?>"
-                     target="_blank"><?php echo $miembro_email; ?></a>
+                     target="_blank"><?php echo esc_html($miembro_email); ?></a>
                 </li>
               <?php endif; ?>
 
@@ -158,9 +164,9 @@ function wpbilbao_page_author_do_loop() {
                 <?php $caracteres = array("+", " "); ?>
                 <?php $miembro_telefono_formatted = str_replace($caracteres, "", $miembro_telefono); ?>
                 <li class="text-right"><i class="fa fa-phone"></i>
-                  <a href="tel:<?php echo $miembro_telefono_formatted; ?>"
+                  <a href="tel:<?php echo esc_html($miembro_telefono_formatted); ?>"
                      title="<?php _e('Llamar por teléfono', 'wpbilbao'); ?>">
-                    <?php echo $miembro_telefono; ?>
+                    <?php echo esc_html($miembro_telefono); ?>
                   </a>
                 </li>
               <?php endif; ?>
@@ -172,32 +178,32 @@ function wpbilbao_page_author_do_loop() {
           <div class="collapse collapseDatos">
             <ul>
               <?php if ($miembro_web) : ?>
-                <li><a href="<?php echo $miembro_web; ?>" title="<?php _e('Visitar página web', 'wpbilbao'); ?>"
+                <li><a href="<?php echo esc_html($miembro_web); ?>" title="<?php _e('Visitar página web', 'wpbilbao'); ?>"
                        target="_blank"><i class="fa fa-globe"></i></a>
                 </li>
               <?php endif; ?>
 
               <?php if ($miembro_twitter) : ?>
-                <li><a href="<?php echo $miembro_twitter; ?>" title="<?php _e('Visitar Twitter', 'wpbilbao'); ?>"
+                <li><a href="<?php echo esc_html($miembro_twitter); ?>" title="<?php _e('Visitar Twitter', 'wpbilbao'); ?>"
                        target="_blank"><i class="fa fa-twitter"></i>
                   </a>
                 </li>
               <?php endif; ?>
 
               <?php if ($miembro_linkedin) : ?>
-                <li><a href="<?php echo $miembro_linkedin; ?>" title="<?php _e('Visitar Linkedin', 'wpbilbao'); ?>"
+                <li><a href="<?php echo esc_html($miembro_linkedin); ?>" title="<?php _e('Visitar Linkedin', 'wpbilbao'); ?>"
                        target="_blank"><i class="fa fa-linkedin"></i></a>
                 </li>
               <?php endif; ?>
 
               <?php if ($miembro_facebook) : ?>
-                <li><a href="<?php echo $miembro_facebook; ?>" title="<?php _e('Visitar Facebook', 'wpbilbao'); ?>"
+                <li><a href="<?php echo esc_html($miembro_facebook); ?>" title="<?php _e('Visitar Facebook', 'wpbilbao'); ?>"
                        target="_blank"><i class="fa fa-facebook"></i></a>
                 </li>
               <?php endif; ?>
 
               <?php if ($miembro_google) : ?>
-                <li><a href="<?php echo $miembro_google; ?>" title="<?php _e('Visitar Google', 'wpbilbao'); ?>"
+                <li><a href="<?php echo esc_html($miembro_google); ?>" title="<?php _e('Visitar Google', 'wpbilbao'); ?>"
                        target="_blank"><i class="fa fa-google"></i></a>
                 </li>
               <?php endif; ?>
@@ -209,10 +215,56 @@ function wpbilbao_page_author_do_loop() {
         <h2 class="text-center"><?php _e('Aún no hay contenido de este miembro', 'wpbilbao'); ?></h2>
       <?php endif; ?>
 
+      <?php wp_reset_query(); ?>
+
     </div><!-- .row -->
+
+    <?php do_action( 'genesis_entry_footer' ); ?>
+
   </div><!-- .entry -->
 
+  <?php do_action( 'genesis_after_entry' ); ?>
+
   <?php
-}
+} // wpbilbao_page_author_do_loop
+
+
+function wpbilbao_page_author_related_members() {
+
+  $miembros = get_users();
+
+  // Get random order of the members
+  shuffle($miembros);
+
+  echo '<div class="lista-miembros row">';
+    echo '<h2>' . __('Otros Miembros', 'wpbilbao') . '</h2>';
+
+    $i = 0;
+    foreach ( $miembros as $miembro ) {
+      $miembro_id = $miembro->ID;
+      $miembro_imagen = get_cimyFieldValue($miembro_id, 'IMAGEN');
+
+      // Show 4 members
+      if ( $i == 4 ) break;
+
+      if ($miembro_imagen) : ?>
+        <div class="miembro-lista col-xs-6 col-sm-2">
+          <a href="<?php echo get_author_posts_url( $miembro_id ); ?>" title="<?php printf( __('Pefil de %s', 'wpbilbao'), esc_html($miembro->display_name) ); ?>">
+            <img src="<?php echo cimy_uef_sanitize_content($miembro_imagen); ?>" alt="<?php echo esc_html($miembro->display_name); ?>"/>
+            <h3><?php echo esc_html($miembro->display_name); ?></h3>
+          </a>
+        </div><!-- .miembro-lista -->
+        <?php $i++; ?>
+      <?php endif;
+
+    }
+    echo '<div class="clearfix"></div>';
+
+    echo '<p>';
+      echo '<a class="btn btn-primario" href="' . site_url() . '/miembros/" title="' . __('Ver todos los miembros', 'wpbilbao') . '">' . __('Ver todos los miembros', 'wpbilbao') . '</a>';
+    echo '</p>';
+  echo '</div><!-- .row -->';
+
+} // wpbilbao_page_author_related_members
 
 genesis();
