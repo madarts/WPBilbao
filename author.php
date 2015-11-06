@@ -248,7 +248,7 @@ function wpbilbao_page_author_related_members() {
       if ( $i == 4 ) break;
 
       if ($miembro_imagen) : ?>
-        <div class="miembro-lista col-xs-6 col-sm-3">
+        <div class="miembro-lista col-xs-6 col-sm-2">
           <a href="<?php echo get_author_posts_url( $miembro_id ); ?>" title="<?php printf( __('Pefil de %s', 'wpbilbao'), esc_html($miembro->display_name) ); ?>">
             <img src="<?php echo cimy_uef_sanitize_content($miembro_imagen); ?>" alt="<?php echo esc_html($miembro->display_name); ?>"/>
             <h3><?php echo esc_html($miembro->display_name); ?></h3>
@@ -261,7 +261,7 @@ function wpbilbao_page_author_related_members() {
     echo '<div class="clearfix"></div>';
 
     echo '<p>';
-      echo '<a class="btn btn-primario" href="' . site_url() . '/miembros-wpbilbao/" title="' . __('Ver todos los miembros', 'wpbilbao') . '">' . __('Ver todos los miembros', 'wpbilbao') . '</a>';
+      echo '<a class="btn btn-primario" href="' . site_url() . '/miembros/" title="' . __('Ver todos los miembros', 'wpbilbao') . '">' . __('Ver todos los miembros', 'wpbilbao') . '</a>';
     echo '</p>';
   echo '</div><!-- .row -->';
 

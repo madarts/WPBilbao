@@ -17,14 +17,10 @@ add_action('genesis_meta', 'wpbilbao_template_cuentas');
 
 function wpbilbao_template_cuentas() {
 
-  /*
-   * Add custom content to the entry footer.
-   */
+  // Add custom content to the entry footer.
   add_action('genesis_entry_footer', 'wpbilbao_template_cuentas_do_loop');
 
-  /*
-   * Force full with content.
-   */
+  // Force full with content.
   add_filter('genesis_pre_get_option_site_layout', '__genesis_return_full_width_content');
 
 }
