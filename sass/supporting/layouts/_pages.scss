@@ -49,6 +49,9 @@
     img {
       margin-bottom: 10px;
       width: 100%;
+      max-width: 233px;
+      height: 100%;
+      max-height: 233px;
     }
 
     h1 {
@@ -99,26 +102,37 @@
       margin-bottom: 30px;
     }
   }
+}
 
-  .miembro-lista {
-    img {
-      border-radius: 50%;
-      max-height: 150px;
-      width: 100%;
-      max-width: 150px;
-    }
+.miembro-lista {
+  min-height: 160px;
+  margin-bottom: 30px;
+  text-align: center;
+  img {
+    border-radius: 50%;
+    max-height: 100px;
+    width: 100%;
+    max-width: 100px;
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
 
-    a {
-      color: $textcolor;
-
-      &:hover {
-        color: $basecolor;
-      }
+    &:hover {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+      -webkit-transition: all 1s ease;
     }
   }
 
-  p {
-    margin-top: 30px;
+  h3 {
+    text-transform: capitalize;
+  }
+
+  a {
+    color: $textcolor;
+
+    &:hover {
+      color: $basecolor;
+    }
   }
 }
 
