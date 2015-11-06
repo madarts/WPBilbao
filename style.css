@@ -808,8 +808,8 @@ ins{background-color:#fff;color:#262626;text-decoration:none}mark{background-col
 pre,code,kbd,samp{font-size:14px;font-size:1.4rem;font-family:"Courier New",monospace;line-height:1.5em}
 pre{white-space:pre;word-wrap:break-word}sub,sup{font-size:12px;font-size:1.2rem;line-height:0;position:relative;vertical-align:1.5em}
 sup{top:-.5em}sub{bottom:-.25em}html{font-size:62.5%}body{font-size:18px;font-size:1.8rem;background-color:#f5f5f5;color:#262626;font-family:"Source Sans Pro",sans-serif;font-weight:300;line-height:1.5em;margin:0}
-.entry-title{font-weight:400}.btn-primario{color:#fff;background-color:#eb232f;border-color:#c9121d}
-.btn-primario:hover,.btn-primario:focus{color:#fff !important;background-color:#c9121d}
+.entry-title{font-weight:400}.btn-primario{background-color:#eb232f;border-color:#c9121d;color:#fff}
+.btn-primario:hover,.btn-primario:focus{background-color:#c9121d;color:#fff !important}
 .site-header .site-title{margin-top:0}.site-header .site-title a{background:url("http://www.wpbilbao.es/wp-content/uploads/2015/05/cropped-wordpress-bilbao1.jpg") no-repeat}
 .site-header .header-widget-area{padding-top:30px}.site-header .widget{-webkit-box-shadow:0 2px rgba(0,0,0,0.05);box-shadow:0 2px rgba(0,0,0,0.05);float:right;max-width:600px;text-align:left}
 .site-header .widget-title{-webkit-box-shadow:inset 5px 0 rgba(0,0,0,0.15);box-shadow:inset 5px 0 rgba(0,0,0,0.15);font-size:24px;font-size:2.4rem;background:#eb232f;color:#fff;margin-bottom:0;padding:6px 10px}
@@ -824,13 +824,16 @@ sup{top:-.5em}sub{bottom:-.25em}html{font-size:62.5%}body{font-size:18px;font-si
 .page-template-template-cuentas .ingresos .precio{color:#3c763d;text-align:right}
 .author .perfil{text-align:center}.author .perfil img{margin-bottom:10px;width:100%}
 .author .perfil h1{margin-bottom:20px}.author .perfil .modal{text-align:left}.author .descripcion li{display:inline-block;margin-right:20px}
-.author .descripcion i{margin-right:10px}.author .redes-sociales li{text-align:center;margin:20px 0 40px}
+.author .descripcion i{margin-right:10px}.author .redes-sociales li{margin:20px 0 40px;text-align:center}
 .author .redes-sociales a{color:#262626}.author .redes-sociales a:hover{color:#eb232f}
-.author .redes-sociales i{font-size:40px;font-size:4rem}.blog .entry-title{font-weight:400;margin:0 0 20px}
-.widget-title{font-weight:400}.category-resumenes iframe{max-width:100% !important}
-.category-resumenes .seccion-single-resumenes{margin-bottom:30px}.miembro-meta{text-align:center}
-.miembro-meta .miembro-meta-gravatar{display:inline-block}.embed-container{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;height:auto}
-.embed-container iframe,.embed-container object,.embed-container embed{position:absolute;top:0;left:0;width:100%;height:100%}
+.author .redes-sociales i{font-size:40px;font-size:4rem}.author .lista-miembros{margin-top:60px;text-align:center}
+.author .lista-miembros h2{margin-bottom:30px}.author .miembro-lista img{border-radius:50%;max-height:150px;width:100%;max-width:150px}
+.author .miembro-lista a{color:#262626}.author .miembro-lista a:hover{color:#eb232f}
+.author p{margin-top:30px}.blog .entry-title{font-weight:400;margin:0 0 20px}.widget-title{font-weight:400}
+.category-resumenes iframe{max-width:100% !important}.category-resumenes .seccion-single-resumenes{margin-bottom:30px}
+.miembro-meta{text-align:center}.miembro-meta .miembro-meta-gravatar{display:inline-block}
+.embed-container{height:auto;max-width:100%;overflow:hidden;padding-bottom:56.25%;position:relative}
+.embed-container iframe,.embed-container object,.embed-container embed{height:100%;left:0;position:absolute;top:0;width:100%}
 .post-type-archive-videos .entry{min-height:295px;padding:20px}.post-type-archive-videos .embed-container{margin-bottom:20px}
 .post-type-archive-videos p{margin-bottom:0}.single-videos .content .btn:last-of-type{margin-left:20px}
 .single-videos .embed-container{margin-bottom:40px}#featured-custom-post-type-2 .entry{margin-bottom:10px}

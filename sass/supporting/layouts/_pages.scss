@@ -90,6 +90,36 @@
       @include font-size(40);
     }
   }
+
+  .lista-miembros {
+    margin-top: 60px;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+
+  .miembro-lista {
+    img {
+      border-radius: 50%;
+      max-height: 150px;
+      width: 100%;
+      max-width: 150px;
+    }
+
+    a {
+      color: $textcolor;
+
+      &:hover {
+        color: $basecolor;
+      }
+    }
+  }
+
+  p {
+    margin-top: 30px;
+  }
 }
 
 // END of PAGES
