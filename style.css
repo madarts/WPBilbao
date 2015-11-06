@@ -815,9 +815,11 @@ sup{top:-.5em}sub{bottom:-.25em}html{font-size:62.5%}body{font-size:18px;font-si
 .site-header .widget-title{-webkit-box-shadow:inset 5px 0 rgba(0,0,0,0.15);box-shadow:inset 5px 0 rgba(0,0,0,0.15);font-size:24px;font-size:2.4rem;background:#eb232f;color:#fff;margin-bottom:0;padding:6px 10px}
 .site-header .widget-title::before{content:'\f145';display:inline-block;font:normal 30px/1 "dashicons";margin-right:10px;vertical-align:text-top;-webkit-font-smoothing:antialiased}
 .site-header .textwidget{-webkit-box-shadow:inset 5px 0 rgba(0,0,0,0.15);box-shadow:inset 5px 0 rgba(0,0,0,0.15);background:#fff;padding:5px 12px}
-.site-header .textwidget .enlace{margin-left:10px}.genesis-nav-menu{font-size:18px;margin-bottom:0}
-.genesis-nav-menu .menu-item{float:left}.genesis-nav-menu .menu-item:last-of-type{float:right}
-.genesis-nav-menu a{color:#262626;display:block;padding:22px 24px}.genesis-nav-menu .current-menu-item a{background-color:#eb232f;color:#fff}
+.site-header .textwidget .enlace{margin-left:10px}.nav-primary .genesis-nav-menu{font-size:18px;margin-bottom:0}
+.nav-primary .genesis-nav-menu .menu-item{float:left}.nav-primary .genesis-nav-menu .menu-item:last-of-type{float:right}
+.nav-primary .genesis-nav-menu a{color:#262626;display:block;padding:22px 24px}.nav-primary .genesis-nav-menu .current-menu-item a{background-color:#eb232f;color:#fff}
+.nav-secondary{background-color:#fff}.nav-secondary .genesis-nav-menu li{float:left}
+.nav-secondary .genesis-nav-menu li:first-of-type a{padding:15px 15px 15px 0}.nav-secondary .genesis-nav-menu a{padding:15px}
 .page-template-template-cuentas form{text-align:center}.page-template-template-cuentas form input{border:0}
 .page-template-template-cuentas .fa{color:#bfbfbf;font-size:16px;margin-right:8px}
 .page-template-template-cuentas .fa:hover{color:#e5554e}.page-template-template-cuentas .gastos .precio{color:#a94442;text-align:right}

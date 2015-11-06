@@ -2,32 +2,55 @@
 
 // Nav-Primary
 
-.genesis-nav-menu {
-  font-size: 18px;
-  margin-bottom: 0;
+.nav-primary {
+  .genesis-nav-menu {
+    font-size: 18px;
+    margin-bottom: 0;
 
-  .menu-item {
-    float: left;
-  }
+    .menu-item {
+      float: left;
+    }
 
-  .menu-item:last-of-type {
-    float: right;
-  }
+    .menu-item:last-of-type {
+      float: right;
+    }
 
-  a {
-    color: $darkergrey;
-    display: block;
-    padding: 22px 24px;
-  }
-
-  .current-menu-item {
     a {
-      background-color: $basecolor;
-      color: $white;
+      color: $darkergrey;
+      display: block;
+      padding: 22px 24px;
+    }
+
+    .current-menu-item {
+      a {
+        background-color: $basecolor;
+        color: $white;
+      }
     }
   }
 }
 
 // Nav-Secondary
+
+.nav-secondary {
+  background-color: $white;
+
+  .genesis-nav-menu {
+
+    li {
+      float: left;
+
+      &:first-of-type {
+
+        a {
+          padding: 15px 15px 15px 0;
+        }
+      }
+    }
+    a {
+      padding: 15px;
+    }
+  }
+}
 
 // END of NAVIGATION
