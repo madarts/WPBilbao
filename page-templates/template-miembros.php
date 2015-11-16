@@ -26,7 +26,7 @@ function wpbilbao_template_miembros() {
 }
 
 function wpbilbao_template_miembros_do_loop() {
-  $miembros = get_users('orderby=nicename');
+  $miembros = get_users('orderby=nicename&role=miembro');
 
   echo '<div class="lista-miembros row">';
 
