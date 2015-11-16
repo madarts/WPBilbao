@@ -18,6 +18,8 @@ include_once(get_stylesheet_directory() . '/lib/theme_setup.php');
 @include 'lib/functions/user-profile.php';
 @include 'lib/functions/custom-footer.php';
 
+@include 'lib/functions/custom-login.php';
+
 /*===========  Sections  ===========*/
 @include 'lib/sections/section-autor.php';
 
@@ -29,4 +31,3 @@ add_action('genesis_before_header', 'genesis_do_subnav');
 add_theme_support('genesis-connect-woocommerce');
 
 /*=====  End of WPBILBAO FUNCTIONS  ======*/
-
