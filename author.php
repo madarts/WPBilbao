@@ -243,17 +243,26 @@ function wpbilbao_page_author_related_members() {
     foreach ( $miembros as $miembro ) {
       $miembro_id = $miembro->ID;
       $miembro_imagen = get_cimyFieldValue($miembro_id, 'IMAGEN');
+      $miembro_descripcion = get_cimyFieldValue($miembro_id, 'DESCRIPCION');
 
-      // Show 4 members
-      if ( $i == 4 ) break;
+      // Show 6 members
+      if ( $i == 6 ) break; ?>
 
-      if ($miembro_imagen) : ?>
+      <?php if ( $miembro_descripcion ) : ?>
+
         <div class="miembro-lista col-xs-6 col-sm-2">
           <a href="<?php echo get_author_posts_url( $miembro_id ); ?>" title="<?php printf( __('Pefil de %s', 'wpbilbao'), esc_html($miembro->display_name) ); ?>">
-            <img src="<?php echo cimy_uef_sanitize_content($miembro_imagen); ?>" alt="<?php echo esc_html($miembro->display_name); ?>"/>
+
+            <?php if ($miembro_imagen) : ?>
+              <img src="<?php echo cimy_uef_sanitize_content($miembro_imagen); ?>" alt="<?php echo esc_html($miembro->display_name); ?>"/>
+            <?php else: ?>
+              <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/images/miembros/wpbilbao-sin-foto.jpg" alt="<?php echo esc_html($miembro->display_name); ?>"/>
+            <?php endif; ?>
+
             <h3><?php echo esc_html($miembro->display_name); ?></h3>
           </a>
         </div><!-- .miembro-lista -->
+
         <?php $i++; ?>
       <?php endif;
 
