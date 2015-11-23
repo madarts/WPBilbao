@@ -38,7 +38,11 @@ function wpbilbao_template_cuentas_do_loop() { ?>
   </div><!-- #donaciones -->
 
   <div id="total-cuentas" class="text-center">
-    <?php $cuentasTotal = get_field('cuentas_total'); ?>
+    <?php
+        $cuentasTotal = get_field('cuentas_total');
+        $totalIngresos = 0;
+        $totalGastos = 0;
+    ?>
     <?php
     /*
      * Check if Total it's positive or negative.
@@ -115,8 +119,13 @@ function wpbilbao_template_cuentas_do_loop() { ?>
                 <?php } ?>
                 <?php the_field('cuentas_descripcion'); ?>
               </td>
-              <td class="precio"><?php the_field('cuentas_cantidad') ?></td>
+              <td class="precio"><?php the_field('cuentas_cantidad') ?> €</td>
             </tr>
+
+            <?php
+              $cuentasCantidadGastos = get_field('cuentas_cantidad');
+              $totalGastos = $totalGastos + $cuentasCantidadGastos;
+            ?>
 
           <?php endwhile; // End of one post. ?>
         <?php else : // If no posts exist. ?>
@@ -128,9 +137,7 @@ function wpbilbao_template_cuentas_do_loop() { ?>
         <tr>
           <td></td>
           <td class="text-right"><strong><?php _e('TOTAL', 'wpbilbao'); ?>:</strong></td>
-          <td class="precio"><strong>
-              <?php echo the_field('cuentas_total_gastos'); ?>
-            </strong></td>
+          <td class="precio"><strong><?php echo $totalGastos . ' €'; ?></strong></td>
         </tr>
         </tbody>
       </table>
@@ -184,7 +191,6 @@ function wpbilbao_template_cuentas_do_loop() { ?>
         <?php $wp_query = new WP_Query($args); ?>
 
         <?php if (have_posts()) : ?>
-          <?php $totalIngresos = 0; ?>
           <?php while (have_posts()) : the_post(); ?>
 
             <tr>
@@ -202,9 +208,8 @@ function wpbilbao_template_cuentas_do_loop() { ?>
             <?php
               $cuentasCantidadIngresos = get_field('cuentas_cantidad');
               $totalIngresos = $totalIngresos + $cuentasCantidadIngresos;
+            ?>
 
-
-              ?>
           <?php endwhile; // End of one post. ?>
         <?php else : // If no posts exist. ?>
           <?php do_action('genesis_loop_else'); ?>
@@ -215,9 +220,7 @@ function wpbilbao_template_cuentas_do_loop() { ?>
         <tr>
           <td></td>
           <td class="text-right"><strong><?php _e('TOTAL', 'wpbilbao'); ?>:</strong></td>
-          <td class="precio"><strong>
-              <?php echo $totalIngresos . ' €'; ?>
-            </strong></td>
+          <td class="precio"><strong><?php echo $totalIngresos . ' €'; ?></strong></td>
         </tr>
         </tbody>
       </table>
