@@ -834,7 +834,8 @@ sup{top:-.5em}sub{bottom:-.25em}html{font-size:62.5%}body{font-size:18px;font-si
 .miembro-lista img:hover{-webkit-filter:grayscale(0);filter:grayscale(0);-webkit-transition:all 1s ease}
 .miembro-lista h3{text-transform:capitalize}.miembro-lista a{color:#262626}.miembro-lista a:hover{color:#eb232f}
 .blog .entry-title{font-weight:400;margin:0 0 20px}.widget-title{font-weight:400}
-.category-resumenes iframe{max-width:100% !important}.category-resumenes .seccion-single-resumenes{margin-bottom:30px}
+.category-resumenes iframe,.category-laburpenak iframe{max-width:100% !important}
+.category-resumenes .seccion-single-resumenes,.category-laburpenak .seccion-single-resumenes{margin-bottom:30px}
 .miembro-meta{text-align:center}.miembro-meta .miembro-meta-gravatar{display:inline-block}
 .embed-container{height:auto;max-width:100%;overflow:hidden;padding-bottom:56.25%;position:relative}
 .embed-container iframe,.embed-container object,.embed-container embed{height:100%;left:0;position:absolute;top:0;width:100%}
