@@ -27,38 +27,19 @@ function wpbilbao_template_cuentas() {
 
 function wpbilbao_template_cuentas_do_loop() { ?>
 
+  <?php
+    $totalIngresos = 0;
+    $totalGastos = 0;
+  ?>
+
   <div id="donaciones">
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" type="hidden"
-                                                                                            value="_s-xclick">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input name="cmd" type="hidden" value="_s-xclick">
       <input name="hosted_button_id" type="hidden" value="JZR46SV74MWYE">
-      <input alt="Aportación a la Comunidad de WordPress" name="submit"
-             src="http://www.wpbilbao.es/wp-content/uploads/2015/04/aportar.png" type="image">
+      <input alt="Aportación a la Comunidad de WordPress" name="submit" src="http://www.wpbilbao.es/wp-content/uploads/2015/04/aportar.png" type="image">
       <img src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" alt="" width="1" height="1">
     </form>
   </div><!-- #donaciones -->
-
-  <div id="total-cuentas" class="text-center">
-    <?php
-        $cuentasTotal = get_field('cuentas_total');
-        $totalIngresos = 0;
-        $totalGastos = 0;
-    ?>
-    <?php
-    /*
-     * Check if Total it's positive or negative.
-     * If Negative, the H1 tag would have the "text-danger" class.
-     * If Positive, the H1 tag would have the "text-sucess" class.
-     *
-     * Ass the input it's Numeric type, we have to add the € symbol.
-     */
-    if ($cuentasTotal < 0) { ?>
-      <h1><?php _e('TOTAL', 'wpbilbao'); ?>: &nbsp; &nbsp; <strong
-          class="text-danger"><?php the_field('cuentas_total'); ?> €</strong></h1>
-    <?php } else { ?>
-      <h1><?php _e('TOTAL', 'wpbilbao'); ?>: &nbsp; &nbsp; <strong
-          class="text-success"><?php the_field('cuentas_total'); ?> €</strong></h1>
-    <?php } ?>
-  </div><!-- #total-cuentas -->
 
   <div class="cuentas row">
     <div class="gastos col-xs-12 col-sm-6">
@@ -226,6 +207,26 @@ function wpbilbao_template_cuentas_do_loop() { ?>
       </table>
     </div><!-- .ingresos -->
   </div> <!-- .cuentas -->
+
+  <div id="total-cuentas" class="text-center">
+    <?php
+    /*
+     * Check if Total it's positive or negative.
+     * If Negative, the H1 tag would have the "text-danger" class.
+     * If Positive, the H1 tag would have the "text-sucess" class.
+     *
+     * Ass the input it's Numeric type, we have to add the € symbol.
+     */
+
+    $cuentasTotal = $totalIngresos - $totalGastos;
+    if ($cuentasTotal < 0) { ?>
+      <h2><?php _e('TOTAL', 'wpbilbao'); ?>: &nbsp; &nbsp; <strong
+          class="text-danger"><?php echo $cuentasTotal ?> €</strong></h2>
+    <?php } else { ?>
+      <h2><?php _e('TOTAL', 'wpbilbao'); ?>: &nbsp; &nbsp; <strong
+          class="text-success"><?php echo $cuentasTotal ?> €</strong></h2>
+    <?php } ?>
+  </div><!-- #total-cuentas -->
 
 <?php }
 
