@@ -184,6 +184,7 @@ function wpbilbao_template_cuentas_do_loop() { ?>
         <?php $wp_query = new WP_Query($args); ?>
 
         <?php if (have_posts()) : ?>
+          <?php $totalIngresos = 0; ?>
           <?php while (have_posts()) : the_post(); ?>
 
             <tr>
@@ -195,9 +196,15 @@ function wpbilbao_template_cuentas_do_loop() { ?>
                 <?php } ?>
                 <?php the_field('cuentas_descripcion'); ?>
               </td>
-              <td class="precio"><?php the_field('cuentas_cantidad') ?></td>
+              <td class="precio"><?php the_field('cuentas_cantidad') ?> €</td>
             </tr>
 
+            <?php
+              $cuentasCantidadIngresos = get_field('cuentas_cantidad');
+              $totalIngresos = $totalIngresos + $cuentasCantidadIngresos;
+
+
+              ?>
           <?php endwhile; // End of one post. ?>
         <?php else : // If no posts exist. ?>
           <?php do_action('genesis_loop_else'); ?>
@@ -209,7 +216,7 @@ function wpbilbao_template_cuentas_do_loop() { ?>
           <td></td>
           <td class="text-right"><strong><?php _e('TOTAL', 'wpbilbao'); ?>:</strong></td>
           <td class="precio"><strong>
-              <?php echo the_field('cuentas_total_ingresos'); ?>
+              <?php echo $totalIngresos . ' €'; ?>
             </strong></td>
         </tr>
         </tbody>
