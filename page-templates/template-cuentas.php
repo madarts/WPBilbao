@@ -212,20 +212,20 @@ function wpbilbao_template_cuentas_do_loop() { ?>
     <?php
     /*
      * Check if Total it's positive or negative.
-     * If Negative, the H1 tag would have the "text-danger" class.
-     * If Positive, the H1 tag would have the "text-sucess" class.
+     * If Negative, the H2 tag would have the "text-danger" class.
+     * If Positive, the H2 tag would have the "text-sucess" class.
      *
-     * Ass the input it's Numeric type, we have to add the € symbol.
+     * As the input it's Numeric type, we have to add the € symbol.
      */
 
     $cuentasTotal = $totalIngresos - $totalGastos;
-    if ($cuentasTotal < 0) { ?>
+    if ($cuentasTotal < 0) : ?>
       <h2><?php _e('TOTAL', 'wpbilbao'); ?>: &nbsp; &nbsp; <strong
           class="text-danger"><?php echo $cuentasTotal ?> €</strong></h2>
-    <?php } else { ?>
+    <?php else : ?>
       <h2><?php _e('TOTAL', 'wpbilbao'); ?>: &nbsp; &nbsp; <strong
           class="text-success"><?php echo $cuentasTotal ?> €</strong></h2>
-    <?php } ?>
+    <?php endif; ?>
   </div><!-- #total-cuentas -->
 
 <?php }

@@ -26,15 +26,11 @@ function wpbilbao_single_resumenes_content() { ?>
       <h2><?php _e('Presentación', 'wpbilbao'); ?></h2>
 
       <?php if (get_field('resumenes_url_presentacion_google_drive')) : ?>
-        <iframe
-          src="https://docs.google.com/presentation/embed?id=<?php the_field('resumenes_url_presentacion_google_drive'); ?>&amp;start=false&amp;loop=false&amp;"
-          frameborder="0" width="100%" height="405"></iframe>
+        <iframe src="https://docs.google.com/presentation/embed?id=<?php the_field('resumenes_url_presentacion_google_drive'); ?>&amp;start=false&amp;loop=false&amp;" frameborder="0" width="100%" height="405"></iframe>
       <?php endif; ?>
 
       <?php if (get_field('resumenes_url_presentacion_slideshare')) : ?>
-        <iframe src="<?php the_field('resumenes_url_presentacion_slideshare'); ?>" width="100%" height="405"
-                frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:none;" allowfullscreen
-                webkitallowfullscreen mozallowfullscreen></iframe>
+        <iframe src="<?php the_field('resumenes_url_presentacion_slideshare'); ?>" width="100%" height="405" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:none;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
       <?php endif; ?>
 
     </div><!-- .presentación -->

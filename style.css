@@ -822,15 +822,15 @@ sup{top:-.5em}sub{bottom:-.25em}html{font-size:62.5%}body{font-size:18px;font-si
 .nav-secondary .genesis-nav-menu li:first-of-type a{padding:15px 15px 15px 0}.nav-secondary .genesis-nav-menu a{padding:15px}
 .page-template-template-cuentas form{text-align:center}.page-template-template-cuentas form input{border:0}
 .page-template-template-cuentas .fa{color:#bfbfbf;font-size:16px;margin-right:8px}
-.page-template-template-cuentas .fa:hover{color:#e5554e}.page-template-template-cuentas .gastos .precio{color:#a94442;text-align:right}
-.page-template-template-cuentas .ingresos .precio{color:#3c763d;text-align:right}
-.author .perfil{text-align:center}.author .perfil img{margin-bottom:10px;width:100%;max-width:233px;height:100%;max-height:233px}
+.page-template-template-cuentas .fa:hover{color:#e5554e}.page-template-template-cuentas .precio{text-align:right}
+.page-template-template-cuentas .gastos .precio{color:#a94442}.page-template-template-cuentas .ingresos .precio{color:#3c763d}
+.author .perfil{text-align:center}.author .perfil img{height:100%;margin-bottom:10px;max-height:233px;max-width:233px;width:100%}
 .author .perfil h1{margin-bottom:20px}.author .perfil .modal{text-align:left}.author .descripcion li{display:inline-block;margin-right:20px}
 .author .descripcion i{margin-right:10px}.author .redes-sociales li{margin:20px 0 40px;text-align:center}
 .author .redes-sociales a{color:#262626}.author .redes-sociales a:hover{color:#eb232f}
 .author .redes-sociales i{font-size:40px;font-size:4rem}.author .lista-miembros{margin-top:60px;text-align:center}
-.author .lista-miembros h2{margin-bottom:30px}.miembro-lista{min-height:160px;margin-bottom:30px;text-align:center}
-.miembro-lista img{border-radius:50%;max-height:100px;width:100%;max-width:100px;-webkit-filter:grayscale(50%);filter:grayscale(50%)}
+.author .lista-miembros h2{margin-bottom:30px}.miembro-lista{margin-bottom:30px;min-height:160px;text-align:center}
+.miembro-lista img{border-radius:50%;max-height:100px;max-width:100px;width:100%;-webkit-filter:grayscale(50%);filter:grayscale(50%)}
 .miembro-lista img:hover{-webkit-filter:grayscale(0);filter:grayscale(0);-webkit-transition:all 1s ease}
 .miembro-lista h3{text-transform:capitalize}.miembro-lista a{color:#262626}.miembro-lista a:hover{color:#eb232f}
 .blog .entry-title{font-weight:400;margin:0 0 20px}.widget-title{font-weight:400}

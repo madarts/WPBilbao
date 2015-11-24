@@ -49,7 +49,7 @@ function wpbilbao_template_miembros_do_loop() {
   }
   echo '<div class="clearfix"></div>';
 
-  echo '</div><!-- .row -->';
+  echo '</div><!-- .lista-miembros -->';
 }
 
 genesis();

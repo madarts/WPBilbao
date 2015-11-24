@@ -54,7 +54,6 @@ function wpbilbao_login_style() { ?>
 				#backtoblog a {
 					color: #ffffff !important;
 				}
-
     }
   </style>
 <?php }

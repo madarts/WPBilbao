@@ -71,10 +71,10 @@ function wpbilbao_page_author_do_loop() {
 
       <?php
       /*
-       * Check that the $miembro_descripcion it's not empty
+       * Check that the $miembro_descripcion it's not empty - Line 79
        *
-       * If has content, then we show it - Line 90
-       * If hasn't got content, then we show the "else :" content - Line 212
+       * If has content, then we show it - Line 81
+       * If hasn't got content, then we show the "else :" content - Line 214
        */
       if ($miembro_descripcion) : ?>
 
@@ -91,15 +91,14 @@ function wpbilbao_page_author_do_loop() {
 
           <?php
           /*
-           * Check if the viewer it's a logued in user - Line 93
+           * Check if the viewer it's a logued in user - Line 99
            *
-           * If logged in, we show him the 'real button' - Line 95
-           * If not logged in, we show the 'false button'. This button shows the Modal - Line 101
+           * If logged in, we show him the 'real button' - Line 101
+           * If not logged in, we show the 'false button'. This button shows the Modal - Line 106
            */
           if (is_user_logged_in()) : ?>
 
-            <a class="btn btn-primario" role="button" data-toggle="collapse" href=".collapseDatos" aria-expanded="false"
-               aria-controls="collapseDatos">
+            <a class="btn btn-primario" role="button" data-toggle="collapse" href=".collapseDatos" aria-expanded="false" aria-controls="collapseDatos">
               <?php _e('Ver datos de contacto', 'wpbilbao'); ?>
             </a>
 
@@ -131,13 +130,9 @@ function wpbilbao_page_author_do_loop() {
                       <strong><?php _e('¡Crea tu perfil ahora en menos de 5 minutos!', 'wpbilbao'); ?></strong></p>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-default"
-                            data-dismiss="modal"><?php _e('Cerrar', 'wpbilbao'); ?></button>
-                    <a href="<?php echo site_url(); ?>/wp-login.php" type="button" class="btn btn-primary"
-                       title="<?php _e('Entrar', 'wpbilbao'); ?>"><?php _e('Entrar', 'wpbilbao'); ?></a>
-                    <a href="<?php echo site_url(); ?>/wp-login.php?action=register" type="button"
-                       class="btn btn-primario"
-                       title="<?php _e('Hacerse miembro', 'wpbilbao'); ?>"><?php _e('Hacerse miembro', 'wpbilbao'); ?></a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><?php _e('Cerrar', 'wpbilbao'); ?></button>
+                    <a href="<?php echo site_url(); ?>/wp-login.php" type="button" class="btn btn-primary" title="<?php _e('Entrar', 'wpbilbao'); ?>"><?php _e('Entrar', 'wpbilbao'); ?></a>
+                    <a href="<?php echo site_url(); ?>/wp-login.php?action=register" type="button" class="btn btn-primario" title="<?php _e('Hacerse miembro', 'wpbilbao'); ?>"><?php _e('Hacerse miembro', 'wpbilbao'); ?></a>
                   </div> <!-- .modal-footer -->
                 </div> <!-- .modal-content -->
               </div> <!-- .modal-dialog -->
@@ -154,9 +149,7 @@ function wpbilbao_page_author_do_loop() {
             <ul>
               <?php if ($miembro_email) : ?>
                 <li class="text-right"><i class="fa fa-envelope"></i>
-                  <a href="mailto:<?php echo esc_html($miembro_email); ?>"
-                     title="<?php _e('Enviar correo electrónico', 'wpbilbao'); ?>"
-                     target="_blank"><?php echo esc_html($miembro_email); ?></a>
+                  <a href="mailto:<?php echo esc_html($miembro_email); ?>" title="<?php _e('Enviar correo electrónico', 'wpbilbao'); ?>" target="_blank"><?php echo esc_html($miembro_email); ?></a>
                 </li>
               <?php endif; ?>
 
@@ -164,8 +157,7 @@ function wpbilbao_page_author_do_loop() {
                 <?php $caracteres = array("+", " "); ?>
                 <?php $miembro_telefono_formatted = str_replace($caracteres, "", $miembro_telefono); ?>
                 <li class="text-right"><i class="fa fa-phone"></i>
-                  <a href="tel:<?php echo esc_html($miembro_telefono_formatted); ?>"
-                     title="<?php _e('Llamar por teléfono', 'wpbilbao'); ?>">
+                  <a href="tel:<?php echo esc_html($miembro_telefono_formatted); ?>" title="<?php _e('Llamar por teléfono', 'wpbilbao'); ?>">
                     <?php echo esc_html($miembro_telefono); ?>
                   </a>
                 </li>
@@ -272,7 +264,7 @@ function wpbilbao_page_author_related_members() {
     echo '<p>';
       echo '<a class="btn btn-primario" href="' . site_url() . '/miembros/" title="' . __('Ver todos los miembros', 'wpbilbao') . '">' . __('Ver todos los miembros', 'wpbilbao') . '</a>';
     echo '</p>';
-  echo '</div><!-- .row -->';
+  echo '</div><!-- .lista-miembros -->';
 
 } // wpbilbao_page_author_related_members
 
