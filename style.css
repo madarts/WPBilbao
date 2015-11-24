@@ -815,24 +815,27 @@ sup{top:-.5em}sub{bottom:-.25em}html{font-size:62.5%}body{font-size:18px;font-si
 .site-header .widget-title{-webkit-box-shadow:inset 5px 0 rgba(0,0,0,0.15);box-shadow:inset 5px 0 rgba(0,0,0,0.15);font-size:24px;font-size:2.4rem;background:#eb232f;color:#fff;margin-bottom:0;padding:6px 10px}
 .site-header .widget-title::before{content:'\f145';display:inline-block;font:normal 30px/1 "dashicons";margin-right:10px;vertical-align:text-top;-webkit-font-smoothing:antialiased}
 .site-header .textwidget{-webkit-box-shadow:inset 5px 0 rgba(0,0,0,0.15);box-shadow:inset 5px 0 rgba(0,0,0,0.15);background:#fff;padding:5px 12px}
-.site-header .textwidget .enlace{margin-left:10px}.genesis-nav-menu{font-size:18px;margin-bottom:0}
-.genesis-nav-menu .menu-item{float:left}.genesis-nav-menu .menu-item:last-of-type{float:right}
-.genesis-nav-menu a{color:#262626;display:block;padding:22px 24px}.genesis-nav-menu .current-menu-item a{background-color:#eb232f;color:#fff}
+.site-header .textwidget .enlace{margin-left:10px}.nav-primary .genesis-nav-menu{font-size:18px;margin-bottom:0}
+.nav-primary .genesis-nav-menu .menu-item{float:left}.nav-primary .genesis-nav-menu .menu-item:last-of-type{float:right}
+.nav-primary .genesis-nav-menu a{color:#262626;display:block;padding:22px 24px}.nav-primary .genesis-nav-menu .current-menu-item a{background-color:#eb232f;color:#fff}
+.nav-secondary{background-color:#fff}.nav-secondary .genesis-nav-menu li{float:left}
+.nav-secondary .genesis-nav-menu li:first-of-type a{padding:15px 15px 15px 0}.nav-secondary .genesis-nav-menu a{padding:15px}
 .page-template-template-cuentas form{text-align:center}.page-template-template-cuentas form input{border:0}
 .page-template-template-cuentas .fa{color:#bfbfbf;font-size:16px;margin-right:8px}
-.page-template-template-cuentas .fa:hover{color:#e5554e}.page-template-template-cuentas .gastos .precio{color:#a94442;text-align:right}
-.page-template-template-cuentas .ingresos .precio{color:#3c763d;text-align:right}
-.author .perfil{text-align:center}.author .perfil img{margin-bottom:10px;width:100%;max-width:233px;height:100%;max-height:233px}
+.page-template-template-cuentas .fa:hover{color:#e5554e}.page-template-template-cuentas .precio{text-align:right}
+.page-template-template-cuentas .gastos .precio{color:#a94442}.page-template-template-cuentas .ingresos .precio{color:#3c763d}
+.author .perfil{text-align:center}.author .perfil img{height:100%;margin-bottom:10px;max-height:233px;max-width:233px;width:100%}
 .author .perfil h1{margin-bottom:20px}.author .perfil .modal{text-align:left}.author .descripcion li{display:inline-block;margin-right:20px}
 .author .descripcion i{margin-right:10px}.author .redes-sociales li{margin:20px 0 40px;text-align:center}
 .author .redes-sociales a{color:#262626}.author .redes-sociales a:hover{color:#eb232f}
 .author .redes-sociales i{font-size:40px;font-size:4rem}.author .lista-miembros{margin-top:60px;text-align:center}
-.author .lista-miembros h2{margin-bottom:30px}.miembro-lista{min-height:160px;margin-bottom:30px;text-align:center}
-.miembro-lista img{border-radius:50%;max-height:100px;width:100%;max-width:100px;-webkit-filter:grayscale(50%);filter:grayscale(50%)}
+.author .lista-miembros h2{margin-bottom:30px}.miembro-lista{margin-bottom:30px;min-height:160px;text-align:center}
+.miembro-lista img{border-radius:50%;max-height:100px;max-width:100px;width:100%;-webkit-filter:grayscale(50%);filter:grayscale(50%)}
 .miembro-lista img:hover{-webkit-filter:grayscale(0);filter:grayscale(0);-webkit-transition:all 1s ease}
 .miembro-lista h3{text-transform:capitalize}.miembro-lista a{color:#262626}.miembro-lista a:hover{color:#eb232f}
 .blog .entry-title{font-weight:400;margin:0 0 20px}.widget-title{font-weight:400}
-.category-resumenes iframe{max-width:100% !important}.category-resumenes .seccion-single-resumenes{margin-bottom:30px}
+.category-resumenes iframe,.category-laburpenak iframe{max-width:100% !important}
+.category-resumenes .seccion-single-resumenes,.category-laburpenak .seccion-single-resumenes{margin-bottom:30px}
 .miembro-meta{text-align:center}.miembro-meta .miembro-meta-gravatar{display:inline-block}
 .embed-container{height:auto;max-width:100%;overflow:hidden;padding-bottom:56.25%;position:relative}
 .embed-container iframe,.embed-container object,.embed-container embed{height:100%;left:0;position:absolute;top:0;width:100%}

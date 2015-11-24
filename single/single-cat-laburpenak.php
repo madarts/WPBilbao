@@ -2,14 +2,14 @@
 
 /*
  *
- * @package WPBilbao\Single\Resumenes
+ * @package WPBilbao\Single\Laburpenak
  * @author  Ibon Azkoitia
  * @license GPL-2.0+
  * @link    http://www.kreatidos.com
  *
  */
 
-/** Init WPBilbao Single Resumenes **/
+/** Init WPBilbao Single Laburpenak **/
 add_action('genesis_meta', 'wpbilbao_single_resumenes_meta');
 
 function wpbilbao_single_resumenes_meta() {
@@ -33,7 +33,7 @@ function wpbilbao_single_resumenes_content() { ?>
         <iframe src="<?php the_field('resumenes_url_presentacion_slideshare'); ?>" width="100%" height="405" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:none;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
       <?php endif; ?>
 
-    </div><!-- .presentación -->
+    </div><!-- .presentacion -->
   <?php endif; ?>
 
   <?php if (get_field('resumenes_url_video')) : ?>
