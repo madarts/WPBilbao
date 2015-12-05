@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Bilbao\n"
 "POT-Creation-Date: 2015-11-16 20:37+0100\n"
-"PO-Revision-Date: 2015-11-16 20:38+0100\n"
+"PO-Revision-Date: 2015-12-05 13:04+0100\n"
 "Last-Translator: Ibon Azkoitia <ibon@kreatidos.com>\n"
 "Language-Team: Kreatidos <info@kreatidos.com>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.5\n"
+"X-Generator: Poedit 1.8.6\n"
 "X-Poedit-Basepath: ../../.\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: __;_e;_x;wpbilbao\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: author.php:103 author.php:110
 msgid "Ver datos de contacto"
-msgstr "Kontaktu datuak ikusi"
+msgstr "Harremanetarako datuak ikusi"
 
 #: author.php:121
 msgid "Hazte miembro"
@@ -27,15 +27,16 @@ msgstr "Bazkide egin"
 #: author.php:124
 msgid ""
 "Para poder ver los datos de contacto de los miembros tienes que ser miembro."
-msgstr "Bazkideen kontaktu datuak ikusi ahal izateko bazkide izan behar zara."
+msgstr ""
+"Bazkideen harremanetarako datuak ikusi ahal izateko bazkidea izan behar zara."
 
 #: author.php:126
 msgid ""
 "Ser miembro es <strong>totalmente gratuito</strong> y podrás contar con tu "
 "propio perfil."
 msgstr ""
-"Bazkide izatea <strong>erabat doan</strong> da eta zure profila eduki ahal "
-"dezakezu."
+"Bazkidea izatea <strong>erabat doan</strong> da eta zure profila izan ahalko "
+"duzu."
 
 #: author.php:128
 msgid "Iremos añadiendo nuevas características para los miembros."
@@ -67,27 +68,29 @@ msgstr "Telefonoz deitu"
 
 #: author.php:181
 msgid "Visitar página web"
-msgstr "Web horrialdea bizitatu"
+msgstr "Web-orria bisitatu"
 
 #: author.php:187
 msgid "Visitar Twitter"
-msgstr "Twitter bizitatu"
+msgstr "Twitter bisitatu"
 
 #: author.php:194
 msgid "Visitar Linkedin"
-msgstr "Linkedin bizitatu"
+msgstr "Linkedin bisitatu"
 
 #: author.php:200
 msgid "Visitar Facebook"
-msgstr "Facebook bizitatu"
+msgstr "Facebook bisitatu"
 
 #: author.php:206
 msgid "Visitar Google"
-msgstr "Google bizitatu"
+msgstr ""
+"Google bis\n"
+"itatu"
 
 #: author.php:215
 msgid "Aún no hay contenido de este miembro"
-msgstr "Bazkide onen informazioa ez dako eskuragarri oraindik"
+msgstr "Bazkide onen informazioa ez dago eskuragarri oraindik"
 
 #: author.php:240
 msgid "Otros Miembros"
@@ -96,7 +99,7 @@ msgstr "Beste bazkide batzuk"
 #: author.php:252 page-templates/template-miembros.php:38
 #, php-format
 msgid "Pefil de %s"
-msgstr "%s-ren Profila"
+msgstr "%s-(r)en Profila"
 
 #: author.php:264
 msgid "Ver todos los miembros"
@@ -108,21 +111,23 @@ msgstr "WordPress Bilbao Komunitatea"
 
 #: lib/functions/custom-footer.php:8
 msgid "Política de Privacidad"
-msgstr ""
+msgstr "Pribatutasun Politika"
 
 #: lib/functions/custom-footer.php:9
 msgid "Aviso Legal"
-msgstr ""
+msgstr "Lege-oharra"
 
 #: lib/functions/custom-footer.php:10
 msgid "Política de Cookies"
-msgstr ""
+msgstr "Cookie Politika"
 
 #: lib/functions/custom-login.php:71
 msgid ""
 "¡Hola! Rellena el siguiente formulario para ser un nuevo miembro de "
 "WordPress Bilbao."
 msgstr ""
+"Kaixo! Bete ezazu hurrengo formularioa “WordPress Bilbao-ko” bazkide barria "
+"bihurtzeko."
 
 #: lib/sections/section-autor.php:39
 msgid "Escrito por"
@@ -186,7 +191,7 @@ msgstr "Bideoa"
 
 #: single/single-cat-resumenes.php:55
 msgid "Menciones en Twitter"
-msgstr "Aipamenak Twitteren"
+msgstr "Aipamenak Twitter-en"
 
 #: single/single-cat-resumenes.php:57
 msgid ""
@@ -208,5 +213,5 @@ msgid ""
 "Meetup\" target=\"_blank\">la página del evento en Meetup</a>."
 msgstr ""
 "Topaketa honetara etorritako bazkideen ikuspegia jakin nahi baduzu, <a href="
-"\"%s\" title=\"Meetup Esteka\" target=\"_blank\">Meetuparen web orrialdetik</"
+"\"%s\" title=\"Meetup Esteka\" target=\"_blank\">Meetuparen web-orrialdetik</"
 "a> pasatu zaitez."
