@@ -142,7 +142,7 @@ function wpbilbao_page_author_do_loop() {
         </div><!-- .perfil -->
 
         <div class="descripcion col-xs-12 col-sm-8">
-          <?php   if ( $polylangSlug != 'eu'): ?>
+          <?php   if ( pll_current_language != 'eu'): ?>
               <?php if ( $miembro_descripcion ) : ?>
                 <?php echo $miembro_descripcion; ?>
               <?php endif; ?>
