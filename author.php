@@ -63,6 +63,7 @@ function wpbilbao_page_author_do_loop() {
   $miembro_google = get_cimyFieldValue($miembro_id, 'GOOGLEPLUS');
 
   $miembro_descripcion = get_cimyFieldValue($miembro_id, 'DESCRIPCION');
+  $miembro_deskribapena = get_cimyFieldValue($miembro_id, 'DESKRIBAPENA');
 
   ?>
 
@@ -141,8 +142,14 @@ function wpbilbao_page_author_do_loop() {
         </div><!-- .perfil -->
 
         <div class="descripcion col-xs-12 col-sm-8">
-          <?php if ($miembro_descripcion) : ?>
-            <?php echo $miembro_descripcion; ?>
+          <?php   if ( pll_current_language != 'eu'): ?>
+              <?php if ( $miembro_descripcion ) : ?>
+                <?php echo $miembro_descripcion; ?>
+              <?php endif; ?>
+          <?php else: ?>
+              <?php if ( $miembro_deskribapena ) : ?>
+                <?php echo $miembro_deskribapena; ?>
+              <?php endif; ?>
           <?php endif; ?>
 
           <div class="collapse collapseDatos">
