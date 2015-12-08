@@ -147,9 +147,9 @@ function wpbilbao_page_author_do_loop() {
                 <?php echo $miembro_descripcion; ?>
               <?php endif; ?>
           <?php else: ?>
-            <?php if ( $miembro_deskribapena ) : ?>
-              <?php echo $miembro_deskribapena; ?>
-            <?php endif; ?>
+              <?php if ( $miembro_deskribapena ) : ?>
+                <?php echo $miembro_deskribapena; ?>
+              <?php endif; ?>
           <?php endif; ?>
 
           <div class="collapse collapseDatos">
