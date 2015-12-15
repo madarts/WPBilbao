@@ -65,6 +65,9 @@ function wpbilbao_page_author_do_loop() {
   $miembro_descripcion = get_cimyFieldValue($miembro_id, 'DESCRIPCION');
   $miembro_deskribapena = get_cimyFieldValue($miembro_id, 'DESKRIBAPENA');
 
+  // Assign language locale, the 'locale' parameter is optional
+  $polylangSlug = pll_current_language('locale');
+
   ?>
 
   <div class="entry">
@@ -72,10 +75,10 @@ function wpbilbao_page_author_do_loop() {
 
       <?php
       /*
-       * Check that the $miembro_descripcion it's not empty - Line 79
+       * Check that the $miembro_descripcion it's not empty - Line 83
        *
-       * If has content, then we show it - Line 81
-       * If hasn't got content, then we show the "else :" content - Line 214
+       * If has content, then we show it - Line 85
+       * If hasn't got content, then we show the "else :" content - Line 216
        */
       if ($miembro_descripcion) : ?>
 
@@ -92,10 +95,10 @@ function wpbilbao_page_author_do_loop() {
 
           <?php
           /*
-           * Check if the viewer it's a logued in user - Line 99
+           * Check if the viewer it's a logued in user - Line 103
            *
-           * If logged in, we show him the 'real button' - Line 101
-           * If not logged in, we show the 'false button'. This button shows the Modal - Line 106
+           * If logged in, we show him the 'real button' - Line 105
+           * If not logged in, we show the 'false button'. This button shows the Modal - Line 112
            */
           if (is_user_logged_in()) : ?>
 
@@ -142,7 +145,7 @@ function wpbilbao_page_author_do_loop() {
         </div><!-- .perfil -->
 
         <div class="descripcion col-xs-12 col-sm-8">
-          <?php   if ( pll_current_language != 'eu'): ?>
+          <?php   if ( $polylangSlug != 'eu'): ?>
               <?php if ( $miembro_descripcion ) : ?>
                 <?php echo $miembro_descripcion; ?>
               <?php endif; ?>
