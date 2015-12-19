@@ -9,7 +9,7 @@ function wpbilbao_login_style() { ?>
       background-image: url(http://www.wpbilbao.es/wp-content/uploads/2015/11/wordpress-bilbao-favicon-high.png);
     }
 
-		#login .cimy_uef_input_27,
+    #login .cimy_uef_input_27,
     #login .cimy_uef_picture,
     .login form .input,
     .login input[type=text] {
@@ -29,6 +29,7 @@ function wpbilbao_login_style() { ?>
     		float: none;
     	}
 
+    /* Just show the Background Image hover 700px for the rest the basic grey */
     @media (min-width: 700px) {
     	.login {
     		background: url(http://www.wpbilbao.es/wp-content/themes/wpbilbao/images/login/wordpress-bilbao-login-background.jpg) no-repeat center center fixed;
@@ -36,12 +37,9 @@ function wpbilbao_login_style() { ?>
 			  -moz-background-size: cover;
 			  -o-background-size: cover;
 			  background-size: cover;
-    		height: initial;
-    	}
-
-    	.login-action-login {
     		height: 100%;
     	}
+      
 			#login {
 				width: 500px;
 			}
