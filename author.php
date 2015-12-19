@@ -85,7 +85,7 @@ function wpbilbao_page_author_do_loop() {
         <div class="perfil col-xs-12 col-sm-3">
 
           <?php if ($miembro_imagen) : ?>
-            <img src="<?php echo cimy_uef_sanitize_content($miembro_imagen); ?>"
+            <img src="<?php echo ($miembro_imagen); ?>"
                  alt="<?php echo esc_html(cimy_uef_sanitize_content($miembro_nombre)); ?>"/>
           <?php endif; ?>
 
@@ -256,7 +256,7 @@ function wpbilbao_page_author_related_members() {
           <a href="<?php echo get_author_posts_url( $miembro_id ); ?>" title="<?php printf( __('Pefil de %s', 'wpbilbao'), esc_html($miembro->display_name) ); ?>">
 
             <?php if ($miembro_imagen) : ?>
-              <img src="<?php echo cimy_uef_sanitize_content($miembro_imagen); ?>" alt="<?php echo esc_html($miembro->display_name); ?>"/>
+              <img src="<?php echo ($miembro_imagen); ?>" alt="<?php echo esc_html($miembro->display_name); ?>"/>
             <?php else: ?>
               <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/images/miembros/wpbilbao-sin-foto.jpg" alt="<?php echo esc_html($miembro->display_name); ?>"/>
             <?php endif; ?>
